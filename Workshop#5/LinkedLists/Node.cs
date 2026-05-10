@@ -6,10 +6,18 @@ namespace LinkedLists
 {
     public class Node<T>
     {
-        // Constructor 
+        // attributes
+        public T Data { get; set; }
 
+        public Node<T>? Next;
+        public Node<T>? Prev;
 
-       // Properties
-        
+        // Constructor
+        public Node(T data)
+        {
+            Data = data;
+            Next = null;
+            Prev = null;
+        }
     }
 }
