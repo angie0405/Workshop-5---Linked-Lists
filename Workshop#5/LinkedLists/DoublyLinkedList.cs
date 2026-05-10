@@ -53,21 +53,21 @@ namespace LinkedLists
 
                 if (actual == null)
                 {
-                    // llego al final
+                
                     Tail!.Next = newNode;
                     newNode.Prev = Tail;
                     Tail = newNode;
                 }
                 else if (actual.Prev == null)
                 {
-                    // va al inicio
+                    
                     newNode.Next = Head;
                     Head!.Prev = newNode;
                     Head = newNode;
                 }
                 else
                 {
-                    // va en el medio
+                    
                     newNode.Next = actual;
                     newNode.Prev = actual.Prev;
                     actual.Prev.Next = newNode;
